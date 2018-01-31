@@ -18,12 +18,12 @@ https://github.com/kanthemes/gmedia/blob/master/LICENSE
     Güncelleme notları
 -------------------------------------------------------
 = 1.0.2 =
-28.01.2018
+31.01.2018
 
 * Hata Giderildi: Görünüm ayarları kısmı çalışmıyordu, düzeltildi
 
 = 1.0.1 =
-28.01.2018
+29.01.2018
 
 * Hata Giderildi: Mobil hatalar düzeltildi
 
