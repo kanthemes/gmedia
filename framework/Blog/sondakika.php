@@ -1,4 +1,3 @@
-<?php if ( is_single() ) : ?>
 <div class="sondakika">
 	<div class="container">
 		<div class="row">
@@ -26,4 +25,3 @@
 		</div>
 	</div>
 </div>
-<?php endif; ?>

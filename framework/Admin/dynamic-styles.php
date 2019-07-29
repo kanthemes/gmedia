@@ -15,13 +15,13 @@ if ( ! function_exists( 'gm_dynamic_css' ) ) {
 			}
 			
 			// ana-renk
-			if ( ot_get_option('cg-first-color') != '#2ca2ff' ) {
-				$styles .= '.secondary-navbar, #spinner a, .sosyal-medya a, .hotnews h2:after, span.rotate, .btn, .tabMenu ul, .tabMenu li, #comments .comment-submit, .comment.byuser span.author, #review-box .overall-score .overall, .search-bar input, #navbar-top, .navbar-footer a:after { background-color: '.ot_get_option('cg-first-color').' !important; }'."\n";
-				$styles .= '.post-home .post-header .entry-time, .block-posts .colitem  .post-header .entry-time, .material-input .input-submit:hover, .material-input label, .recentapp .itemBottom .fiyat, .sondakika .slick-prev:hover:before, .sondakika .slick-next:hover:before, .sondakika-label, .entry p>a, .navbar .header-menu li.aktif a, .navbar-footer   { color: '.ot_get_option('cg-first-color').' !important; }'."\n";
+			if ( ot_get_option('cg-first-color') != '#2f409a' ) {
+				$styles .= '.secondary-navbar, #spinner a, .sosyal-medya a, .hotnews h2:after, span.rotate, .btn, .tabMenu ul, .tabMenu li, #comments .comment-submit, .comment.byuser span.author, #review-box .overall-score .overall, .search-bar input, .navbar-footer a:after, .featured .entry-category { background-color: '.ot_get_option('cg-first-color').' !important; }'."\n";
+				$styles .= '.post-home .post-header .entry-time, .block-posts .colitem,  .post-header .entry-time, .material-input .input-submit:hover, .material-input label, .recentapp .itemBottom .fiyat, .sondakika .slick-prev:hover:before, .sondakika .slick-next:hover:before, .sondakika-label, .entry p>a, .navbar .header-menu li.aktif a, .navbar-footer   { color: '.ot_get_option('cg-first-color').' !important; }'."\n";
 			}
 			
 			// ikinci-renk
-			if ( ot_get_option('cg-second-color') != '#0083ff' ) {
+			if ( ot_get_option('cg-second-color') != '#253794' ) {
 				$styles .= '#header, #navbar-top button.close-button  { background-color: '.ot_get_option('cg-second-color').' !important; }'."\n";
 				$styles .= '.title-box i  { color: '.ot_get_option('cg-second-color').' !important; }'."\n";
 			}

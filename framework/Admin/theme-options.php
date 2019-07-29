@@ -237,6 +237,14 @@ function custom_theme_options() {
 					'choices'	=> array()
 				),
 				array(
+					'id'		=> 'social-icon',
+					'label'		=> 'İkon',
+					'desc'		=> 'Örnek: fa-facebook (Diğerleri için <a href="https://fontawesome.com/v4.7.0/icons/">tıklayın.</a>',
+					'std'		=> 'fa-',
+					'type'		=> 'text',
+					'choices'	=> array()
+				),
+				array(
 					'id'		=> 'social-target',
 					'label'		=> 'Link Ayarları',
 					'desc'		=> '',
@@ -311,7 +319,7 @@ function custom_theme_options() {
 			'id'		=> 'cg-first-color',
 			'label'		=> 'Ana Renk',
 			'desc'			=> 'Sitenin tasarımına uygun bir renk seçimi yapmak için <a href="https://material.google.com/style/color.html#color-color-palette">tıklayın.</a>',
-			'std'		=> '#2ca2ff',
+			'std'		=> '#2f409a',
 			'type'		=> 'colorpicker',
 			'class'		=> '',
 			'section'	=> 'theme-styles'
@@ -319,7 +327,7 @@ function custom_theme_options() {
 		array(
 			'id'		=> 'cg-second-color',
 			'label'		=> 'İkinci renk',
-			'std'		=> '#0083ff',
+			'std'		=> '#253794',
 			'desc'			=> 'Sitenin tasarımına uygun bir renk seçimi yapmak için <a href="https://material.google.com/style/color.html#color-color-palette">tıklayın.</a>',
 			'type'		=> 'colorpicker',
 			'class'		=> '',

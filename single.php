@@ -1,6 +1,7 @@
 <?php get_header(); ?>
-<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-<?php $postid = get_the_ID(); setPostViews($postid); ?>
+<?php while ( have_posts() ) : the_post(); ?>
+<?php $postid = get_the_ID(); ?>
+<?php setPostViews($postid); ?>
 <div class="entry-top-fixed">
 <div class="container">
 <div class="row">
@@ -8,7 +9,7 @@
 <?php if ( ot_get_option( 'open-menu' ) != 'off' ): ?>
 	<div class="menu-icon pull-left">
 		<a href="#" id="hamburger-icon" class="buton-md more waves-effect" title="Menu">
-			<i class="material-icons md-dark"></i>
+			<i class="material-icons">menu</i>
 		</a>
 	</div>
 <?php endif; ?>
@@ -88,7 +89,7 @@
 						</div>
 					</div>
 				</article>
-				<?php endwhile; endif; ?>
+				<?php endwhile; ?>
 			</div>
 		</div>
 		<?php get_sidebar(); ?>
