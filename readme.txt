@@ -1,22 +1,26 @@
 ------------------------------------------------------------------
-    Temamızı indirdiğiniz/kullandığınız için teşekkür ederiz.
+# Temamızı indirdiğiniz/kullandığınız için teşekkür ederiz.
 ------------------------------------------------------------------
-
 Gmedia Wordpress temasını örnek olması amacıyla tamamen açık kaynak kodlu ve Türkçe olarak ücretsiz şekilde paylaşıyoruz. Tema kullanımında karşılaşacağınız hataları bize bildirmekten çekinmeyin.
 
 Tanıtım: https://www.kanthemes.com/gmedia-tanitim/
 Demo: https://www.kanthemes.com/urun/gmedia-ucretsiz-blog-temasi
 
 -------------------------------------------------------
-    Yazılım Hakları
+# Yazılım Hakları
 -------------------------------------------------------
-
 Bu yazılım GNU General Public License v3.0 ile lisanslanmıştır. Lisans şartları doğrultusunda istediğiniz gibi kullanabilirsiniz.
 https://github.com/kanthemes/gmedia/blob/master/LICENSE
 
 -------------------------------------------------------
-    Güncelleme notları
+# Güncelleme notları
 -------------------------------------------------------
+= 1.3 =
+11.10.2018
+
+* Hata Giderildi: Sosyal medya ikonları gözükmüyordu, düzeltildi 
+* CSS: Tema renkleri değiştirildi
+
 = 1.0.2 =
 31.01.2018
 
