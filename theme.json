@@ -1,0 +1,14 @@
+{
+  "name": "Gmedia Wordpress Teması",
+  "description": "Gmedia kanthemes.com tarafından geliştirilmiş ücretsiz olarak dağıtımı yapılan bir wordpress temasıdır, tüm hakları kanthemes.com'a aittir.",
+  "homepage": "https://www.kanthemes.com/urun/gmedia-wordpress-temasi/",
+  "license": "http://www.gnu.org/licenses/gpl-2.0.html",
+  "authors": [
+    {
+      "name": "Kan Themes",
+      "email": "admin@kanthemes.com",
+      "homepage": "https://www.kanthemes.com",
+      "role": "Developer"
+    }
+  ],
+}

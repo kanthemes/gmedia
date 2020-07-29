@@ -78,6 +78,14 @@ function custom_theme_options() {
       ),
     ),
     'settings'        => array(
+			array(
+				'id'		=> 'kanthemes-link',
+				'label'		=> 'Tema Yapımcısı Linki',
+				'desc'		=> 'Tema yapımcısı linkinin görünümü.',
+				'std'		=> 'on',
+				'type'		=> 'on-off',
+				'section'	=> 'genel'
+			),
 		array(
 			'id'		=> 'custom-logo',
 			'label'		=> __('Logo', 'gm'),

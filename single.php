@@ -13,7 +13,7 @@
 		</a>
 	</div>
 <?php endif; ?>
-<h2 class="entry-title"><?php the_title(); ?></h2>
+<h1 class="entry-title"><?php the_title(); ?></h1>
 </div>
 <div class="pull-right">
 <?php echo get_simple_likes_button( get_the_ID() ); ?></div>
@@ -36,7 +36,7 @@
 						<header class="entry-header">
 						<div class="entry-title-box">
 							<?php if ( ot_get_option( 'breadcrumb' ) != 'off' ) { get_template_part('framework/Blog/breadcrumb'); } ?>
-							<h2 class="entry-title"><?php the_title(); ?></h2>
+							<h1 class="entry-title"><?php the_title(); ?></h1>
 							<div class="entry-title-meta">
 								<span class="entry-time timestamp"><time class="updated" datetime="<?php the_time('c'); ?>"><?php echo human_time_diff( get_the_time('U'), current_time('timestamp') ) . ' önce'; ?></time></span>
 								<a class="fn" rel="author" href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>"><?php the_author(); ?></a> tarafından

@@ -1,4 +1,4 @@
-<?php wp_footer(); ?>
+<?php wp_footer(); ?>
 <?php echo ot_get_option( 'footer-analiz' ); ?>
-</body>
+</body>
 </html>

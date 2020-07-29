@@ -2,7 +2,7 @@
 Theme Name: Gmedia
 Text Domain: gm
 Description: Flat ve materyal tasarım trendlerinin bir araya getirildiği "Gmedia" teması teknoloji, program, blog, inceleme siteleriniz için bire bir. Kan Temaları tarafından hazırlanıp ücretsiz olarak paylaşılmıştır.
-Version: 1.3
+Version: 1.4
 Author: Kan Themes
 Author URI: http://www.kanthemes.com
 Tags: two-columns, three-columns, theme-options, custom-colors, full-width-template
@@ -344,15 +344,13 @@ body.single .secondary-navbar{box-shadow:none}
 .featured{display:inline-block;width:100%}
 .hotnews{padding:0;overflow:hidden;position:relative}
 .hotnews a{color:#fff}
-.hotnews h2{font-size:21px;margin:15px 0 1em;position:relative;line-height:28px}
+.hotnews h2{font-size:21px;margin:15px 0 10px;position:relative;line-height:28px}
 .hotnews:hover .block-image .post-meta,.hotnews.big .block-image .post-meta{-webkit-transform:translate(0%,-15%);-ms-transform:translate(0%,-15%);transform:translate(0%,-15%)}
 .hotnews .block-image .post-meta{position:absolute;bottom:0;font-size:12px;-webkit-transition:opacity 0.35s,-webkit-transform .35s;transition:opacity 0.35s,transform .35s;color:#fff;left:3em;right:3em;z-index:2}
 .hotnews.small .post-meta{left:2em;right:2em}
 .hotnews .block-image .post-meta span{opacity:0;visibility:visible;-webkit-transition:opacity .24s ease-in-out;-moz-transition:opacity .24s ease-in-out;transition:opacity .24s ease-in-out}
 .hotnews:hover .block-image .post-meta span,.hotnews.big .block-image .post-meta span{opacity:1}
 .hotnews h2 a:hover{text-decoration:none}
-.hotnews h2:after{content:"";position:absolute;bottom:-10px;transition:all .2s;-webkit-transition:all .5s;-moz-transition:all .5s;left:0;height:5px;width:0;background-color:#2f409a}
-.hotnews:hover h2:after,.hotnews.big h2:after{right:0;width:100%}
 .hotnews .block-image{z-index:2}
 .hotnews .block-image img{width:100%!important;-webkit-transition:all .5s ease;-moz-transition:all .5s ease;transition:all .5s ease}
 .hotnews.big{width:50%;float:left}
@@ -905,3 +903,12 @@ div#share .btn{padding:5px 10px;border-radius:2px}
 .sosyal-medya a{margin-left:5px;display:inline-block;line-height:35px;text-align:Center;width:35px;height:35px;outline:none;cursor:pointer;transition:all .3s;border:0;font-size:14px;border-radius:50px;background:#2f409a;color:rgba(255,255,255,.9);transition:width .3s}
 .sosyal-medya a:hover{color:#fff}
 .featured .entry-category {background: #2f409a;padding: 5px 10px;font-size: 12px;border-radius: 2px;}
+.entry-top-fixed .entry-title {
+	overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+		-webkit-box-orient: vertical;
+		margin: 0 0px 0 46px !important;
+		font-size: 20px
+}
