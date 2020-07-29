@@ -3,7 +3,7 @@
 ------------------------------------------------------------------
 Gmedia Wordpress temasını örnek olması amacıyla tamamen açık kaynak kodlu ve Türkçe olarak ücretsiz şekilde paylaşıyoruz. Tema kullanımında karşılaşacağınız hataları bize bildirmekten çekinmeyin.
 
-Tanıtım: https://www.kanthemes.com/gmedia-tanitim/
+Tanıtım: https://www.kanthemes.com/
 Demo: https://www.kanthemes.com/urun/gmedia-ucretsiz-blog-temasi
 
 -------------------------------------------------------
@@ -15,6 +15,15 @@ https://github.com/kanthemes/gmedia/blob/master/LICENSE
 -------------------------------------------------------
 # Güncelleme notları
 -------------------------------------------------------
+= 1.4 =
+29.07.2020
+
+* Düzenleme: Sliderda gözüken yazı sayısı 4'e çıkartıldı.
+* Düzenleme: Yazı başlıklarının etiketi h1 olarak değiştirildi.
+* CSS: Aşağı inildiğinde gözüken yazı barında değişiklikler.
+* CSS: Manşette tasarım değişiklikleri.
+* Yeni: Tema yapımcı linkini kaldırabileceğiniz bir ayar eklendi.
+
 = 1.3 =
 11.10.2018
 
