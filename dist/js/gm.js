@@ -142,7 +142,7 @@ $('.center').slick({
 
 
 
-        slidesToShow: 4
+        slidesToShow: 1
 
 
 
