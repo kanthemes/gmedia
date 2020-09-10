@@ -41,6 +41,7 @@ function wp_gm_pagination($pages = '', $range = 4)
 if(function_exists('register_sidebar')) {
 	register_sidebar(array(
 		'name' => 'Sidebar',
+		'id' => 'sidebar-1',
 		'before_widget' => '<aside id="%1$s" class="widgets %2$s">',
 		'after_widget' => '</aside>',
 		'before_title' => '<div class="title-box"><h2 class="title"><i class="material-icons md-16"></i> ',
@@ -48,15 +49,9 @@ if(function_exists('register_sidebar')) {
 	));
 	register_sidebar(array(
 		'name' => 'Homepage',
+		'id' => 'sidebar-2',
 		'before_widget' => '<section class="homepage-widget %2$s">',
 		'after_widget' => '</section>',
-		'before_title' => '<div class="title-box"><h2 class="title"><i class="material-icons md-16"></i> ',
-		'after_title' => '</h2></div>',
-	));
-	register_sidebar(array(
-		'name' => 'UygulamaSidebar',
-		'before_widget' => '<aside id="%1$s" class="widgets %2$s">',
-		'after_widget' => '</aside>',
 		'before_title' => '<div class="title-box"><h2 class="title"><i class="material-icons md-16"></i> ',
 		'after_title' => '</h2></div>',
 	));
