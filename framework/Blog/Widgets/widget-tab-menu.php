@@ -5,13 +5,12 @@ function tabs_load_widgets()
 	register_widget('Tabs_Widget');
 }
 class Tabs_Widget extends WP_Widget {
-	function Tabs_Widget()
-	{
+	public function __construct(){
 		$widget_ops = array('classname' => 'tab-widget', 'description' => 'Son Yazılar, Popüler Yazılar ve Etiketlerin bulunduğu Tab Menü Bileşeni');
 		$control_ops = array('id_base' => 'tabs-widget');
-		$this->WP_Widget('tabs-widget', THEME_NAME .' - '.__( "Tab Menu" , 'bg' ) , $widget_ops, $control_ops );
+		parent::__construct('tabs-widget', THEME_NAME .' - '.__( "Tab Menu" , 'bg' ) , $widget_ops, $control_ops );
 	}
-	function widget($args, $instance)
+	public function widget($args, $instance)
 	{
 		extract($args);
 		$posts1 = $instance['posts1'];
@@ -103,8 +102,7 @@ class Tabs_Widget extends WP_Widget {
 		<?php
 		echo $after_widget;
 	}
-	function update($new_instance, $old_instance)
-	{
+	public function update($new_instance, $old_instance){
 		$instance = $old_instance;
 		$instance['posts1'] = $new_instance['posts1'];
 		$instance['posts'] = $new_instance['posts'];
@@ -114,8 +112,7 @@ class Tabs_Widget extends WP_Widget {
 		$instance['show_tags'] = $new_instance['show_tags'];
 		return $instance;
 	}
-	function form($instance)
-	{
+	public function form($instance){
 		$defaults = array('posts1' => 5, 'posts' => '5', 'tags' => 20, 'show_recent_posts1' => 'on', 'show_popular_posts' => 'on', 'show_tags' =>  'on');
 		$instance = wp_parse_args((array) $instance, $defaults); ?>
 		<p>

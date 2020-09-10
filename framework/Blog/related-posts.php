@@ -4,7 +4,7 @@
 		'category__in' => $category_ids,
 		'post__not_in' => array($post->ID),
 		'showposts'=>4, // Gösterilecek benzer yazı sayısı
-		'caller_get_posts'=>1
+		'ignore_sticky_posts'=>1
 	);
 $my_query = new wp_query($args); if( $my_query->have_posts() ) { while ($my_query->have_posts()) {$my_query->the_post(); ?>
 <article id="post-<?php the_ID(); ?>" class="post-home">	

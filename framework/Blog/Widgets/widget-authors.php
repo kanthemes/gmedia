@@ -4,13 +4,14 @@ function tie_Author_Bio_widget() {
 	register_widget( 'tie_Author_Bio' );
 }
 class tie_Author_Bio extends WP_Widget {
-	function tie_Author_Bio() {
+	public function __construct(){
 		$widget_ops = array( 'classname' => 'Author-Bio' );
 		$control_ops = array( 'width' => 250, 'height' => 350, 'id_base' => 'author-bio-widget' );
-		$this->WP_Widget( 'author-bio-widget', THEME_NAME .' - '.__( 'Yazar Profil' , 'gm' ) , $widget_ops, $control_ops );
+		parent::__construct( 'author-bio-widget', THEME_NAME .' - '.__( 'Yazar Profil' , 'gm' ) , $widget_ops, $control_ops );
 	}
-	function widget( $args, $instance ) {
-		extract( $args );
+	public function widget($args, $instance)
+	{
+		extract($args);
 		$title = apply_filters('widget_title', $instance['title'] );
 		$img = $instance['img'];
 		$author = $instance['author'];
@@ -68,7 +69,7 @@ class tie_Author_Bio extends WP_Widget {
 			<?php
 			echo $after_widget;
 	}
-	function update( $new_instance, $old_instance ) {
+	public function update($new_instance, $old_instance){
 		$instance = $old_instance;
 		$instance['title'] = strip_tags( $new_instance['title'] );
 		$instance['author'] = strip_tags( $new_instance['author'] );
@@ -80,7 +81,7 @@ class tie_Author_Bio extends WP_Widget {
 		}
 		return $instance;
 	}
-	function form( $instance ) {
+	public function form($instance){
 		$defaults = array( 'title' =>__( 'About Author' , 'gm') );
 		$defaults = array( 'author' =>__( 'Author' , 'gm') );
 		$instance = wp_parse_args( (array) $instance, $defaults ); ?>

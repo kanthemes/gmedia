@@ -5,13 +5,12 @@ function gm_homepage_1col_load_widgets()
 	register_widget('Gm_Homepage_1col_Widget');
 }
 class Gm_Homepage_1col_Widget extends WP_Widget {
-	function Gm_Homepage_1col_Widget()
-	{
+	public function __construct(){
 		$widget_ops = array('classname' => 'gm_homepage_1col', 'description' => 'Tek sütunlu kategori bazlı son yazılar bileşeni.');
 		$control_ops = array('id_base' => 'gm_homepage_1col-widget');
-		$this->WP_Widget('gm_homepage_1col-widget', THEME_NAME .' - '.__( "Tek Sütunlu Son Yazılar" , 'gm' ) , $widget_ops, $control_ops );
+		parent::__construct('gm_homepage_1col-widget', THEME_NAME .' - '.__( "Tek Sütunlu Son Yazılar" , 'gm' ) , $widget_ops, $control_ops );
 	}
-	function widget($args, $instance)
+public function widget($args, $instance)
 	{
 		extract($args);
 		$show_excerpt = isset($instance['show_excerpt']) ? 'true' : 'false';
@@ -91,8 +90,7 @@ class Gm_Homepage_1col_Widget extends WP_Widget {
 		<?php
 		echo $after_widget;
 	}
-	function update($new_instance, $old_instance)
-	{
+	public function update($new_instance, $old_instance){
 		$instance = $old_instance;
 		$instance['show_excerpt'] = $new_instance['show_excerpt'];
 		$instance['title'] = $new_instance['title'];
@@ -102,8 +100,7 @@ class Gm_Homepage_1col_Widget extends WP_Widget {
 		$instance['show_images'] = true;
 		return $instance;
 	}
-	function form($instance)
-	{
+	public function form($instance){
 		$defaults = array('show_excerpt' => null, 'title' => 'Son Yazılar', 'post_type' => 'all', 'categories' => 'all', 'posts' => 4);
 		$instance = wp_parse_args((array) $instance, $defaults); ?>
 		<p>

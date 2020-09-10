@@ -5,14 +5,12 @@ function bg_homepage_2col_load_widgets()
 	register_widget('Bg_Homepage_2col_Widget');
 }
 class Bg_Homepage_2col_Widget extends WP_Widget {
-	function Bg_Homepage_2col_Widget()
-	{
+	public function __construct(){
 		$widget_ops = array('classname' => 'bg_homepage_2col', 'description' => 'Çift sütunlu kategori bazlı son yazılar bileşeni.');
 		$control_ops = array('id_base' => 'bg_homepage_2col-widget');
-		$this->WP_Widget('bg_homepage_2col-widget', THEME_NAME .' - '.__( "Çift Sütunlu Son Yazılar" , 'gm' ) , $widget_ops, $control_ops );
+		parent::__construct('bg_homepage_2col-widget', THEME_NAME .' - '.__( "Çift Sütunlu Son Yazılar" , 'gm' ) , $widget_ops, $control_ops );
 	}
-	function widget($args, $instance)
-	{
+	public function widget($args,$instance){
 		extract($args);
 		$show_excerpt = isset($instance['show_excerpt']) ? 'true' : 'false';
 		$title = $instance['title'];
@@ -156,8 +154,7 @@ class Bg_Homepage_2col_Widget extends WP_Widget {
 		<?php
 		echo $after_widget;
 	}
-	function update($new_instance, $old_instance)
-	{
+	public function update($new_instance, $old_instance){
 		$instance = $old_instance;
 		$instance['show_excerpt'] = $new_instance['show_excerpt'];
 		$instance['title'] = $new_instance['title'];
@@ -172,8 +169,7 @@ class Bg_Homepage_2col_Widget extends WP_Widget {
 		$instance['show_images_2'] = true;
 		return $instance;
 	}
-	function form($instance)
-	{
+	public function form($instance){
 		$defaults = array('show_excerpt' => null, 'title' => 'Son Yazılar', 'post_type' => 'all', 'categories' => 'all', 'posts' => 4, 'title_2' => 'Son Yazılar', 'post_type_2' => 'all', 'categories_2' => 'all', 'posts_2' => 4);
 		$instance = wp_parse_args((array) $instance, $defaults); ?>
 		<p>

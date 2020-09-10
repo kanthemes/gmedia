@@ -5,7 +5,7 @@ function gm_load_recent_apps() {
 add_action('widgets_init', 'gm_load_recent_apps');
 class gm_recent_apps extends WP_Widget {
 /* Widget setup. */
-function gm_recent_apps() {
+public function __construct(){
 	$widget_ops = array( 'classname' => 'gm_recent_apps', 'description' => __('Uygulamalar kısmına eklediğiniz yazıların listesi (Ana sayfa için tasarlanmıştır)', 'gm') );
 	$control_ops = array( 'width' => 250, 'height' => 350, 'id_base' => 'gm_recent_apps');
 	$this->WP_Widget('gm_recent_apps', THEME_NAME .' - '.__( "Son Uygulamalar" , 'gm' ) , $widget_ops, $control_ops );

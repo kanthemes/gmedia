@@ -5,14 +5,15 @@ function gm_load_recent_reviews() {
 add_action('widgets_init', 'gm_load_recent_reviews');
 class gm_recent_reviews extends WP_Widget {
 /* Widget setup. */
-function gm_recent_reviews() {
+public function __construct(){
 	$widget_ops = array( 'classname' => 'gm_recent_reviews', 'description' => __('(Sidebar) A widget that displays recent reviews.', 'gm') );
 	$control_ops = array( 'width' => 250, 'height' => 350, 'id_base' => 'gm_recent_reviews');
-	$this->WP_Widget('gm_recent_reviews', THEME_NAME .' - '.__( "Son İncelemeler" , 'gm' ) , $widget_ops, $control_ops );
+	parent::__construct('gm_recent_reviews', THEME_NAME .' - '.__( "Son İncelemeler" , 'gm' ) , $widget_ops, $control_ops );
 }
 /* Display the widget on the screen. */
-function widget($args, $instance) {
-	extract($args);
+public function widget($args, $instance)
+	{
+		extract($args);
 	$title = apply_filters('widget_title', $instance['title'] );
 	$posts = $instance['posts'];
 	echo $before_widget;
@@ -41,14 +42,14 @@ function widget($args, $instance) {
 	<?php wp_reset_query(); ?>
 	<?php echo $after_widget; }
 /* Update the widget settings. */
-function update($new_instance, $old_instance) {
+public function update($new_instance, $old_instance){
 	$instance = $old_instance;
 	$instance['title'] = $new_instance['title'];
 	$instance['posts'] = $new_instance['posts'];
 	return $instance;
 }
 /* Set up some default widget settings. */
-function form($instance){
+public function form($instance){
 	$defaults = array('title' => 'Recent Reviews', 'categories' => 'all', 'posts' => 5);
 	$instance = wp_parse_args((array) $instance, $defaults); ?>
 	<!-- Widget title: Text Input -->

@@ -4,11 +4,12 @@ function gm_subscribe_widgets() {
 	register_widget('gm_subscribe_widget');
 }
 class gm_subscribe_widget extends WP_Widget {
-	function gm_subscribe_widget() {
+	public function __construct(){
 		$widget_ops = array( 'classname' => 'widget_subscribe', 'description' => 'Displays RSS Email Subscription Form' );
-		$this->WP_Widget('gm_subscribe_widget', THEME_NAME .' - '.__( "RSS Email ile Abone Ol Bileşeni" , 'gm' ) , $widget_ops );
+		parent::__construct('gm_subscribe_widget', THEME_NAME .' - '.__( "RSS Email ile Abone Ol Bileşeni" , 'gm' ) , $widget_ops );
 	}
-	function form($instance) {
+	public function form($instance){
+		extract($args);
 		$instance = wp_parse_args( (array) $instance, array('title' => 'Abone Olun', 'subscribe_text' => 'Yazılarımızı fırından çıkar çıkmaz e-posta adresinde görmek ister misiniz?', 'feedid' => '') );
         $title = esc_attr($instance['title']);
 		$feedid = $instance['feedid'];
@@ -31,14 +32,15 @@ class gm_subscribe_widget extends WP_Widget {
         </p>
 <?php
     }
-	function update($new_instance, $old_instance) {
+	public function update($new_instance, $old_instance){
         $instance=$old_instance;
         $instance['title'] = strip_tags($new_instance['title']);
 		$instance['feedid'] = $new_instance['feedid'];
         $instance['subscribe_text'] = $new_instance['subscribe_text'];
         return $instance;
     }
-	function widget($args, $instance) {
+	public function widget($args, $instance)
+	{
 		extract($args);
 		$title = apply_filters('widget_title', $instance['title'] );
 		if ( empty($title) ) $title = false;

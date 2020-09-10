@@ -5,13 +5,12 @@ function gm_facebook_like_load_widgets()
 	register_widget('gm_facebook_Like_Widget');
 }
 class gm_facebook_Like_Widget extends WP_Widget {
-	function gm_facebook_Like_Widget()
-	{
+	public function __construct(){
 		$widget_ops = array('classname' => 'widget_facebook_like', 'description' => 'Facebook profil, sayfa veya grubunuzu yayınlayabileceğiniz bileşen.');
 		$control_ops = array('id_base' => 'gm_facebook-like-widget');
-        $this->WP_Widget('gm_facebook-like-widget', THEME_NAME .' - '.__( "Facebook Beğen Kutusu" , 'gm' ) , $widget_ops, $control_ops );
+        parent::__construct('gm_facebook-like-widget', THEME_NAME .' - '.__( "Facebook Beğen Kutusu" , 'gm' ) , $widget_ops, $control_ops );
 	}
-	function widget($args, $instance)
+	public function widget($args, $instance)
 	{
 		extract($args);
 		$title = apply_filters('widget_title', $instance['title']);
@@ -42,8 +41,7 @@ class gm_facebook_Like_Widget extends WP_Widget {
 		<?php endif;
 		echo $after_widget;
 	}
-	function update($new_instance, $old_instance)
-	{
+	public function update($new_instance, $old_instance){
 		$instance = $old_instance;
 		$instance['title'] = strip_tags($new_instance['title']);
 		$instance['page_url'] = $new_instance['page_url'];
@@ -54,8 +52,7 @@ class gm_facebook_Like_Widget extends WP_Widget {
 		$instance['show_header'] = $new_instance['show_header'];
 		return $instance;
 	}
-	function form($instance)
-	{
+	public function form($instance){
 		$defaults = array('title' => 'Facebook Sayfamız', 'page_url' => '', 'width' => '345', 'color_scheme' => 'light', 'show_faces' => 'on', 'show_stream' => false, 'show_header' => false);
 		$instance = wp_parse_args((array) $instance, $defaults); ?>
 		<p>

@@ -4,13 +4,14 @@ function recent_posts_widget() {
 	register_widget( 'recent_posts' );
 }
 class recent_posts extends WP_Widget {
-	function recent_posts() {
+	public function __construct(){
 		$widget_ops = array( 'classname' => 'recentpost', 'description' => 'Seçeneceğiniz kategorinin son yazılarını listeyen son yazılar bileşeni.' );
 		$control_ops = array( 'width' => 250, 'height' => 350, 'id_base' => 'recentpost_widget' );
-		$this->WP_Widget( 'recentpost_widget', THEME_NAME .' - '.__( "Sidebar Küçük Son Yazılar" , 'geo' ) , $widget_ops, $control_ops );
+		parent::__construct( 'recentpost_widget', THEME_NAME .' - '.__( "Sidebar Küçük Son Yazılar" , 'geo' ) , $widget_ops, $control_ops );
 	}
-	function widget( $args, $instance ) {
-		extract( $args );
+	public function widget($args, $instance)
+	{
+		extract($args);
 		$title = apply_filters('widget_title', $instance['title'] );
 		$no_of_posts = $instance['no_of_posts'];
 		$cats_id = $instance['cats_id'];
@@ -23,7 +24,7 @@ class recent_posts extends WP_Widget {
 	<?php 
 		echo $after_widget;
 	}
-	function update( $new_instance, $old_instance ) {
+	public function update($new_instance, $old_instance){
 		$instance = $old_instance;
 		$instance['title'] = strip_tags( $new_instance['title'] );
 		$instance['no_of_posts'] = strip_tags( $new_instance['no_of_posts'] );
@@ -31,7 +32,7 @@ class recent_posts extends WP_Widget {
 		$instance['thumb'] = strip_tags( $new_instance['thumb'] );
 		return $instance;
 	}
-	function form( $instance ) {
+	public function form($instance){
 		$defaults = array( 'title' =>__( 'Category Posts' , 'geo'), 'no_of_posts' => '5' , 'cats_id' => '1' , 'thumb' => 'true' );
 		$instance = wp_parse_args( (array) $instance, $defaults );
 		$categories_obj = get_categories();
