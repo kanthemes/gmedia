@@ -3,7 +3,6 @@
 ------------------------------------------------------------------
 Gmedia Wordpress temasını örnek olması amacıyla tamamen açık kaynak kodlu ve Türkçe olarak ücretsiz şekilde paylaşıyoruz. Tema kullanımında karşılaşacağınız hataları bize bildirmekten çekinmeyin.
 
-Tanıtım: https://www.kanthemes.com/
 Demo: https://www.kanthemes.com/urun/gmedia-ucretsiz-blog-temasi
 
 -------------------------------------------------------
@@ -15,6 +14,14 @@ https://github.com/kanthemes/gmedia/blob/master/LICENSE
 -------------------------------------------------------
 # Güncelleme notları
 -------------------------------------------------------
+
+= 1.5 =
+10.09.2020
+
+* Hata: Php +7.0 hataları giderildi.
+* Hata: Wp versiyon uyumluluk hataları giderildi.
+* Hata: Yorum yapılırken giriş yapılmışsa bile kullanıcı adı istiyordu düzeltildi.
+
 = 1.4 =
 29.07.2020
 
