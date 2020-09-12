@@ -21,7 +21,7 @@ Gmedia temasının güncelleme notları şöyledir;
 - Hata: Wp versiyon uyumluluk hataları giderildi.
 - Hata: Yorum yapılırken giriş yapılmışsa bile kullanıcı adı istiyordu düzeltildi.
 
-## [1.5] - 29.07.2020
+## [1.4] - 29.07.2020
 
 - Düzenleme: Sliderda gözüken yazı sayısı 4'e çıkartıldı.
 - Düzenleme: Yazı başlıklarının etiketi h1 olarak değiştirildi.
