@@ -2,7 +2,7 @@
 Theme Name: Gmedia
 Text Domain: gm
 Description: Flat ve materyal tasarım trendlerinin bir araya getirildiği "Gmedia" teması teknoloji, program, blog, inceleme siteleriniz için bire bir. Kan Temaları tarafından hazırlanıp ücretsiz olarak paylaşılmıştır.
-Version: 1.5
+Version: 1.5.1
 Author: Kan Themes
 Author URI: http://www.kanthemes.com
 Tags: two-columns, three-columns, theme-options, custom-colors, full-width-template
@@ -437,7 +437,8 @@ body.single .secondary-navbar{box-shadow:none}
 .content-area .entry-header .entry-title-box .entry-title{font-size:30px;font-weight:700;line-height:38px;margin:0 0 24px}
 .entry-header .more,.post-big .more{left:auto!important;right:2em;bottom:-1em!important}
 .entry-header .more .sl-icon svg{margin-top:13px}
-#breadcrumbs{margin-bottom:25px}
+#breadcrumbs{margin-bottom:25px;display:block;}
+#breadcrumbs li{display:inline-block;}
 #breadcrumbs a{text-transform:none;margin-right:.5em}
 .recent-uyg .meta{font-size:14px}
 .recent-uyg .meta span{margin-left:0!important;font-size:14px!important}
