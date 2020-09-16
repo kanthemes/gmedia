@@ -11,6 +11,10 @@ https://github.com/kanthemes/gmedia/blob/master/LICENSE
 # Güncelleme Notları
 Gmedia temasının güncelleme notları şöyledir;
 
+## [1.5.2] - 17.09.2020
+
+- Düzenleme: Yönetici paneline Hata Bildir butonu eklendi.
+
 ## [1.5.1] - 12.09.2020
 
 - Hata: Breadcrumb veri işaretleme hatası giderildi.
