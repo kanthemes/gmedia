@@ -385,13 +385,16 @@ function gmedia_footer() { ?>
 <?php }
 add_action( 'admin_notices', 'gmedia_admin_notice_error');
 function gmedia_admin_notice_error() { ?>		
-<div class="notice notice-success is-success is-dismissible" style="position: relative">
+<div class="notice notice-info is-info is-dismissible" style="position: relative">
 <button type="button" class="notice-dismiss">
 		<span class="screen-reader-text">Dismiss this notice.</span>
 	</button>
-<p style="font-size:20px">Gmedia, <a href="https://www.kanthemes.com" title="Kan Themes">Kan Themes</a> tarafından ücretsiz paylaşılmış bir wordpress blog temasıdır. Emeğimize teşekkür etmek için sitemizi ziyaret edip yorum bırakabilirsiniz.</p>
+<p style="font-size:16px">Gmedia, <a href="https://www.kanthemes.com" title="Kan Themes">Kan Themes</a> tarafından ücretsiz paylaşılmış bir wordpress blog temasıdır. Eğer temamızdan memnunsanız aşağıdaki teşekkür et butonuna tıklayarak ürün sayfamızda kısa bir mesaj bırakabilirsiniz.</p>
+<p style="font-size:16px">Hata bildirimi yapmak için veya tema ile alakalı sorularınız için aşağıdaki Hata Bildirimi butonuna tıklayarak bir konu başlatabilirsiniz.</p>
 <p>
-<a class="button-secondary" target="_blank" href="https://www.kanthemes.com/urun/gmedia-ucretsiz-blog-temasi/"> <?php printf(esc_html__('Teşekkür Et', 'geoit')); ?></a>	<a class="button-primary" href="https://www.kanthemes.com/wordpress-temalari/" target="_blank"><?php esc_html_e('Diğer Temalarımıza Göz At', 'geoit'); ?></a>
+<a class="button-secondary" target="_blank" href="https://github.com/kanthemes/gmedia/issues"> <?php printf(esc_html__('Hata Bildir', 'gm')); ?></a><br><br>
+<a class="button-secondary" target="_blank" href="https://www.kanthemes.com/urun/gmedia-ucretsiz-blog-temasi/"> <?php printf(esc_html__('Teşekkür Et', 'gm')); ?></a>
+<a class="button-primary" target="_blank" href="https://www.kanthemes.com/wordpress-temalari/" target="_blank"><?php esc_html_e('Diğer Temalarımıza Göz At', 'gm'); ?></a>
 </p>
 </div>
 <?php }
