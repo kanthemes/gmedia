@@ -349,7 +349,7 @@ function gmedia_header() {?>
 			 <?php if (ot_get_option('kanthemes-link') != 'off'): ?>
        <div class="navbar-footer">
 
-      <a rel="nofollow" href="https://www.kanthemes.com" title="Kan Themes - Kaliteli ve SEO Uyumlu Türkçe Wordpress Temaları">Wordpress Temaları</a>
+				<a rel="noreferrer noopener nofollow" target="_blank" href="https://www.kanthemes.com/" title="Kaliteli ve SEO Uyumlu Türkçe Wordpress Temaları">Wordpress Tema</a>
 
 			 </div>
        <?php endif; ?>
