@@ -101,9 +101,9 @@
 										$('#criteria-placeholder').append('<p><label for="<?php echo $field['id']; ?>['+count+'][c_label]">Label :</label><input type="text" name="<?php echo $field['id']; ?>['+count+'][c_label]" value="" /><label for="<?php echo $field['id']; ?>['+count+'][score]">Skor :</label><input type="text" name="<?php echo $field['id']; ?>['+count+'][score]" value="" /><a class="remove button-secondary">Remove</a></p>');
 										return false;
 									});
-									$('.remove').live('click', function() {
-										$(this).parent().remove();
-									});
+									// $('.remove').live('click', function() {
+										// $(this).parent().remove();
+									// });
 								});
 							</script>
 							<?php
