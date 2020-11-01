@@ -11,6 +11,10 @@ https://github.com/kanthemes/gmedia/blob/master/LICENSE
 # Güncelleme Notları
 Gmedia temasının güncelleme notları şöyledir;
 
+## [1.5.3] - 01.11.2020
+
+- Hata: Klasik editörde etiket ve öne çıkarılan görsel ekleyememe sorunları giderildi.
+
 ## [1.5.2] - 17.09.2020
 
 - Düzenleme: Yönetici paneline Hata Bildir butonu eklendi.
