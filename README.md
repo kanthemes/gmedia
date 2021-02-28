@@ -1,15 +1,20 @@
 # Gmedia Wordpress Teması
 Gmedia Wordpress temasını örnek olması amacıyla tamamen açık kaynak kodlu ve Türkçe olarak ücretsiz şekilde paylaşıyoruz. Tema kullanımında karşılaşacağınız hataları bize bildirmekten çekinmeyin.
 
-[Demo](https://demo.kanthemes.com/gmedia/)  |
-[İndir](https://www.kanthemes.com/urun/gmedia-ucretsiz-blog-temasi/)
+[Demo](https://demo.kanthemes.com/gmedia/) | [İndir](https://www.kanthemes.com/urun/gmedia-ucretsiz-blog-temasi/)
 
 # Yazılım Hakları
-Bu yazılım GNU General Public License v3.0 ile lisanslanmıştır. Lisans şartları doğrultusunda istediğiniz gibi kullanabilirsiniz.
+Bu yazılım GNU General Public License v3.0 ile lisanslanmıştır. Ücretsiz dağıtmak koşuluyla her türlü geliştirmeyi yaparak kendi adınıza paylaşabilirsiniz.
 https://github.com/kanthemes/gmedia/blob/master/LICENSE
 
 # Güncelleme Notları
 Gmedia temasının güncelleme notları şöyledir;
+
+## [1.6] - 28.02.2021
+
+- Yenilik: Header tasarımı yenilendi.
+- Hata: Otomatik güncellemelerdeki hata giderildi, yeni güncelleme aracına geçildi.
+- Düzenleme: Ana sayfa Manşet alanında tasarımsal düzenlemeler.
 
 ## [1.5.3] - 01.11.2020
 
