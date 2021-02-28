@@ -290,16 +290,8 @@ function gmedia_header() {?>
 	<div id="header">
 		<div class="container">
 			<div class="row">
-				<div class="pull-left">
-					<?php if ( ot_get_option('custom-logo') ): ?>
-					<div class="logo pull-left">
-						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php bloginfo('name'); ?>"><img src="<?php echo ot_get_option('custom-logo'); ?>" alt="<?php bloginfo('name'); ?>"/></a>  
-					</div>
-					<?php else: ?>
-						<div class="logo pull-left">
-						<h1 class="logoyok"><a class="logo-yok" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php bloginfo('name'); ?>"><?php bloginfo('name'); ?></a></h1>
-						</div>
-					<?php endif; ?>
+		
+					
 				<?php if ( ot_get_option( 'open-menu' ) != 'off' ): ?>
 					<div class="menu-icon pull-left">
 						<a href="#" id="hamburger-icon" class="buton-md more waves-effect" title="Menu">
@@ -307,7 +299,17 @@ function gmedia_header() {?>
 						</a>
 					</div>
 				<?php endif; ?>
-				</div>
+				
+				<?php if ( ot_get_option('custom-logo') ): ?>
+					<div class="logo pull-center">
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php bloginfo('name'); ?>"><img src="<?php echo ot_get_option('custom-logo'); ?>" alt="<?php bloginfo('name'); ?>"/></a>  
+					</div>
+					<?php else: ?>
+						<div class="logo pull-center">
+						<h1 class="logoyok"><a class="logo-yok" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php bloginfo('name'); ?>"><?php bloginfo('name'); ?></a></h1>
+						</div>
+					<?php endif; ?>
+
 					<div class="pull-right arama">
 						<?php gm_social_links() ; ?>
 						<form  method="get" action="<?php echo home_url('/'); ?>" class="search-bar">
