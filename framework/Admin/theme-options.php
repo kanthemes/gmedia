@@ -327,7 +327,7 @@ function custom_theme_options() {
 			'id'		=> 'cg-first-color',
 			'label'		=> 'Ana Renk',
 			'desc'			=> 'Sitenin tasarımına uygun bir renk seçimi yapmak için <a href="https://material.google.com/style/color.html#color-color-palette">tıklayın.</a>',
-			'std'		=> '#2f409a',
+			'std'		=> '#4861de',
 			'type'		=> 'colorpicker',
 			'class'		=> '',
 			'section'	=> 'theme-styles'
@@ -335,7 +335,7 @@ function custom_theme_options() {
 		array(
 			'id'		=> 'cg-second-color',
 			'label'		=> 'İkinci renk',
-			'std'		=> '#253794',
+			'std'		=> '#364bb7',
 			'desc'			=> 'Sitenin tasarımına uygun bir renk seçimi yapmak için <a href="https://material.google.com/style/color.html#color-color-palette">tıklayın.</a>',
 			'type'		=> 'colorpicker',
 			'class'		=> '',
