@@ -1,6 +1,13 @@
 <?php
-require_once('wp-updates-theme.php');
-new WPUpdatesThemeUpdater_2211( 'http://wp-updates.com/api/2/theme', basename( get_template_directory() ) );
+require 'plugin-update-checker/plugin-update-checker.php';
+$myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
+	'https://github.com/kanthemes/gmedia/',
+	__FILE__,
+	'gmedia'
+);
+
+//Optional: Set the branch that contains the stable release.
+$myUpdateChecker->setBranch('master');
 define ('THEME_NAME',	"Gm" );
 define ('THEME_FOLDER',	"gmedia" );          
 /* ------------------------------------------------------------------------- *
