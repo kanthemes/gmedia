@@ -21,8 +21,7 @@
 			<figcaption class="post-meta">
 			<span class="entry-category"><?php the_category(', '); ?></span>
 				<h2 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
-				<span class="entry-time timestamp"><i class="material-icons">access_time</i> <time class="updated" datetime="<?php the_time('c'); ?>"><?php echo human_time_diff( get_the_time('U'), current_time('timestamp') ) . ' önce'; ?> </time></span>
-				<span class="entry-author fn"><i class="material-icons">account_circle</i> <?php the_author(); ?></span>
+
 			</figcaption>	
 			</div>
 		</figure>
