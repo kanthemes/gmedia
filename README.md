@@ -16,6 +16,7 @@ Gmedia temasının güncelleme notları şöyledir;
 - Hata: Yazar sayfasındaki değişken hatası giderilmiştir.
 - Hata: Kategori sayfasındaki değişken hatası giderilmiştir.
 - Hata: "Facebook Beğen Kutusu" bileşeni http olarak çağırıldığı için çalışmıyordu https olarak düzenlenerek düzeltildi.
+- Hata: Yazı listeleme bileşenlerindeki değişken hataları giderilmiştir.
 - Düzenleme: Varsayılan renkler değiştirildi.
 - Düzenleme: Kullanılmayan fontawesome kaldırılmıştır.
 - Düzenleme: Kategori sayfasında kategori açıklamaları gözükmüyordu, düzeltildi.
