@@ -41,7 +41,7 @@ class Bg_Homepage_2col_Widget extends WP_Widget {
 				'cat' => $categories,
 			));
 			?>
-			<?php $counter = 1; while($recent_posts->have_posts()): $recent_posts->the_post(); ?>
+			<?php $counter = 1; while($recent_posts->have_posts()): $recent_posts->the_post(); global $post;  ?>
 			<?php if($counter == 1): ?>
 			<div class="post-box col-md-6">
 			<div class="row">
@@ -103,7 +103,7 @@ class Bg_Homepage_2col_Widget extends WP_Widget {
 				'cat' => $categories_2,
 			));
 			?>			
-			<?php $counter = 1; while($recent_posts->have_posts()): $recent_posts->the_post(); ?>
+			<?php $counter = 1; while($recent_posts->have_posts()): $recent_posts->the_post(); global $post;  ?>
 			<?php if($counter == 1): ?>
 			<div class="post-box col-md-6 last">
 			<div class="row">

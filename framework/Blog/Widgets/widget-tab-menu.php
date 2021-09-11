@@ -20,9 +20,7 @@ class Tabs_Widget extends WP_Widget {
 		$show_popular_posts = isset($instance['show_popular_posts']) ? 'true' : 'false';
 		$show_tags = isset($instance['show_tags']) ? 'true' : 'false';
 		echo $before_widget;
-		if($title) {
-			echo $before_title.$title.$after_title;
-		}		
+
 		?>
 		<!-- BEGIN WIDGET -->
 		<div id="tab-menu">
@@ -39,7 +37,7 @@ class Tabs_Widget extends WP_Widget {
 					<?php
 					$recent_posts1 = new WP_Query('showposts='.$posts1.'');
 					if($recent_posts1->have_posts()): ?>
-						<?php while($recent_posts1->have_posts()): $recent_posts1->the_post(); ?>
+						<?php while($recent_posts1->have_posts()): $recent_posts1->the_post(); global $post;  ?>
 						<div class="tabitem">
 							<?php if(has_post_thumbnail()): ?>
 							<?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'fg-small'); ?>
@@ -66,7 +64,7 @@ class Tabs_Widget extends WP_Widget {
 						'posts_per_page' => 5
 					) );
 					if($popular_posts->have_posts()): ?>
-						<?php while($popular_posts->have_posts()): $popular_posts->the_post(); ?>
+						<?php while($popular_posts->have_posts()): $popular_posts->the_post(); global $post; ?>
 						<div class="tabitem">
 							<?php if(has_post_thumbnail()): ?>
 							<?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'fg-small'); ?>

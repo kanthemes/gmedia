@@ -27,7 +27,7 @@ class Gm_sidebar_1col_Widget extends WP_Widget {
 				'cat' => $categories,
 			));
 			?>
-			<?php $counter = 1; while($recent_posts->have_posts()): $recent_posts->the_post(); ?>
+			<?php $counter = 1; while($recent_posts->have_posts()): $recent_posts->the_post(); global $post;  ?>
 			<?php if($counter == 1): ?>
 			<?php $big_count = round(1 / 4); if(!$big_count) { $big_count = 1; } ?>
 		<div class="sidebar-post-widget">

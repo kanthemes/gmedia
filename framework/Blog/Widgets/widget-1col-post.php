@@ -37,7 +37,7 @@ public function widget($args, $instance)
 				'cat' => $categories,
 			));
 			?>
-			<?php $counter = 1; while($recent_posts->have_posts()): $recent_posts->the_post(); ?>
+			<?php $counter = 1; while($recent_posts->have_posts()): $recent_posts->the_post(); global $post;  ?>
 			<?php if($counter == 1): ?>
 			<div class="post-box">
 			<div class="post-col-item">
