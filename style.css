@@ -2,7 +2,7 @@
 Theme Name: Gmedia
 Text Domain: gm
 Description: Flat ve materyal tasarım trendlerinin bir araya getirildiği "Gmedia" teması teknoloji, program, blog, inceleme siteleriniz için bire bir. Kan Temaları tarafından hazırlanıp ücretsiz olarak paylaşılmıştır.
-Version: 1.6
+Version: 1.6.1
 Author: Kan Themes
 Author URI: http://www.kanthemes.com
 Tags: two-columns, three-columns, theme-options, custom-colors, full-width-template
@@ -553,7 +553,7 @@ font-weight:700
 }
 
 .entry p>a {
-color:#2f409a
+color:#003a66
 }
 
 .entry b,.entry strong {
@@ -757,7 +757,7 @@ background:#f1f1f1
 #header {
 width:100%;
 z-index:3;
-background-color:#253794;
+background-color:#00233d;
 height:80px;
 transition:top .2s ease-in-out;
 overflow:hidden;
@@ -910,7 +910,7 @@ cursor:pointer;
 border:0;
 font-size:14px;
 border-radius:50px;
-background:#2f409a;
+background:#003a66;
 color:transparent;
 transition:width .3s
 }
@@ -1201,7 +1201,7 @@ padding:0;
 text-align:center;
 width:30px;
 height:30px;
-background:#2f409a;
+background:#003a66;
 top:13px;
 position:absolute;
 right:1em;
@@ -1232,7 +1232,7 @@ padding:10px 24px 10px 40px
 }
 
 .navbar .header-menu li.aktif a {
-color:#2f409a
+color:#003a66
 }
 
 .navbar .header-menu .sub-menu a {
@@ -1301,7 +1301,7 @@ padding:0 20px;
 height:50px;
 box-shadow:0 -1px 0 0 #eaeaea;
 line-height:50px;
-color:#2f409a;
+color:#003a66;
 font-size:13px
 }
 
@@ -1331,7 +1331,7 @@ padding-left:0
 }
 
 .secondary-navbar {
-background-color:#2f409a;
+background-color:#003a66;
 min-height:64px;
 text-align:center;
 -ms-box-shadow:0 2px 5px rgba(0,0,0,.26);
@@ -1489,7 +1489,7 @@ width:100%
 }
 
 #spinner a {
-background:#2f409a;
+background:#003a66;
 text-align:center;
 color:#fff;
 width:100%;
@@ -1610,7 +1610,7 @@ font-size:15px
 }
 
 .post-home .post-header .entry-time {
-color:#2f409a;
+color:#003a66;
 display:block;
 margin-right:.5em;
 font-size:14px
@@ -1829,7 +1829,11 @@ color:#ccc
 
 .featured {
 display:inline-block;
-width:100%
+width:100%;
+margin: 20px 0 0 !important;
+}
+.featured.slick-slider {
+margin-bottom: 0px !important
 }
 
 .hotnews {
@@ -2215,7 +2219,7 @@ padding:0
 }
 
 .block-posts .colitem .post-header .entry-time {
-color:#2f409a;
+color:#003a66;
 display:block;
 font-size:14px
 }
@@ -2325,7 +2329,7 @@ display:inline-block
 }
 
 .title-box i {
-color:#253794
+color:#00233d
 }
 
 .content-area .entry-header .entry-title-box {
@@ -2603,7 +2607,7 @@ line-height:1.5
 .post-card p {
 font-size:14px;
 font-weight:400;
-color:#2f409a
+color:#003a66
 }
 
 .post-card .card-url {
@@ -2613,7 +2617,7 @@ top:.5em
 }
 
 span.rotate {
-background:#2f409a url(https://ssl.gstatic.com/bt/C3341AA7A1A076756462EE2E5CD71C11/1x/btw_ic_speeddial_white_24dp.png) center no-repeat;
+background:#003a66 url(https://ssl.gstatic.com/bt/C3341AA7A1A076756462EE2E5CD71C11/1x/btw_ic_speeddial_white_24dp.png) center no-repeat;
 position:absolute;
 transform:rotate(90deg);
 transition:.3s;
@@ -2960,7 +2964,7 @@ background-position:0 0
 
 .btn {
 position:relative;
-background-color:#2f409a;
+background-color:#003a66;
 cursor:pointer;
 box-shadow:0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
 transition:box-shadow .2s cubic-bezier(0.4,0,0.2,1);
@@ -3238,7 +3242,7 @@ height:1em
 }
 
 .tabMenu ul {
-background-color:#2f409a;
+background-color:#003a66;
 position:relative
 }
 
@@ -3253,7 +3257,7 @@ will-change:left,right
 .tabMenu li {
 width:32.67%;
 padding:20px 0!important;
-background-color:#2f409a;
+background-color:#003a66;
 text-align:center;
 border:0!important
 }
@@ -3355,6 +3359,10 @@ background-attachment:fixed;
 background-position:center
 }
 
+.author-cover .author-avatar {
+margin-top: 13em
+}
+
 .author-cover .author-avatar img {
 -webkit-border-radius:50%;
 border-radius:50%;
@@ -3362,15 +3370,13 @@ border:3px solid #fff
 }
 
 .author-cover .author-name {
-color:#fff;
 margin-bottom:1em;
 top:auto;
 bottom:0
 }
 
 .author-cover .author-name h1 {
-color:#fff;
-font-weight:400;
+font-weight:600;
 font-size:20px
 }
 
@@ -3602,7 +3608,7 @@ margin:1em 0
 }
 
 #comments .comment-submit {
-background-color:#2f409a;
+background-color:#003a66;
 border:0;
 color:#fff;
 cursor:pointer;
@@ -3695,7 +3701,7 @@ margin-top:-3px;
 margin-left:10px;
 font-weight:400;
 color:#fff;
-background:#2f409a;
+background:#003a66;
 font-size:12px;
 float:left
 }
@@ -3713,7 +3719,7 @@ color:#ddd
 }
 
 .material-input .input-submit:hover {
-color:#2f409a
+color:#003a66
 }
 
 .material-input {
@@ -3751,7 +3757,7 @@ box-shadow:0 0 5px rgba(57,73,171,0.13)
 .material-input label {
 position:absolute;
 top:10px;
-color:#2f409a;
+color:#003a66;
 left:1em;
 pointer-events:none
 }
@@ -3881,7 +3887,7 @@ border-radius:3px
 
 #review-box .overall-score .overall {
 font-size:50px;
-background-color:#2f409a;
+background-color:#003a66;
 line-height:1.2;
 color:#FFF;
 font-weight:700;
@@ -4505,7 +4511,7 @@ width:208px
 }
 
 .recentapp .itemBottom .fiyat {
-color:#2f409a;
+color:#003a66;
 display:block;
 font-size:12px;
 padding:10px
@@ -4544,7 +4550,7 @@ color:#ddd
 }
 
 .sondakika .slick-prev:hover:before,.sondakika .slick-next:hover:before {
-color:#2f409a
+color:#003a66
 }
 
 .sondakika .slick-next {
@@ -4566,7 +4572,7 @@ display:flex
 .sondakika-label {
 font-size:12px;
 position:relative;
-color:#2f409a
+color:#003a66
 }
 
 .sondakika-label i {
@@ -4917,7 +4923,7 @@ transition:all .3s;
 border:0;
 font-size:14px;
 border-radius:50px;
-background:#2f409a;
+background:#003a66;
 color:rgba(255,255,255,.9);
 transition:width .3s
 }
@@ -4927,7 +4933,7 @@ color:#fff
 }
 
 .featured .entry-category {
-background:#2f409a;
+background:#003a66;
 padding:5px 10px;
 font-size:12px;
 border-radius:2px
