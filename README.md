@@ -10,6 +10,17 @@ https://github.com/kanthemes/gmedia/blob/master/LICENSE
 # Güncelleme Notları
 Gmedia temasının güncelleme notları şöyledir;
 
+## [1.6.1] - 12.09.2021
+
+- Hata: Bazı sunucularda karşılaşılan ot-loader.php "syntax error" hatası giderilmiştir.
+- Hata: Yazar sayfasındaki değişken hatası giderilmiştir.
+- Hata: Kategori sayfasındaki değişken hatası giderilmiştir.
+- Hata: "Facebook Beğen Kutusu" bileşeni http olarak çağırıldığı için çalışmıyordu https olarak düzenlenerek düzeltildi.
+- Düzenleme: Varsayılan renkler değiştirildi.
+- Düzenleme: Kullanılmayan fontawesome kaldırılmıştır.
+- Düzenleme: Kategori sayfasında kategori açıklamaları gözükmüyordu, düzeltildi.
+- Düzenleme: Yazar sayfasında minor tasarımsal düzenleme.
+
 ## [1.6] - 28.02.2021
 
 - Yenilik: Header tasarımı yenilendi.
