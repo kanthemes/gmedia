@@ -21,7 +21,7 @@ if ( ! function_exists( 'gm_dynamic_css' ) ) {
 			}
 			
 			// ikinci-renk
-			if ( ot_get_option('cg-second-color') != '#253794' ) {
+			if ( ot_get_option('cg-second-color') != '#00233d' ) {
 				$styles .= '#header, #navbar-top button.close-button  { background-color: '.ot_get_option('cg-second-color').' !important; }'."\n";
 				$styles .= '.title-box i  { color: '.ot_get_option('cg-second-color').' !important; }'."\n";
 			}

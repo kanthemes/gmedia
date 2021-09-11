@@ -283,7 +283,6 @@ function kan_themes_head() {
 function gmedia_header() {?>
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="<?php echo esc_url( get_template_directory_uri() . '/style.css' ); ?>"/>
-	<link rel="stylesheet" type="text/css" href="<?php echo esc_url( get_template_directory_uri() . '/dist/css/font-awesome.min.css' ); ?>"/>
 	<link rel="stylesheet" type="text/css" href="<?php echo esc_url( get_template_directory_uri() . '/dist/slick/slick.css' ); ?>"/>
 	<link rel="stylesheet" type="text/css" href="<?php echo esc_url( get_template_directory_uri() . '/dist/slick/slick-theme.css' ); ?>"/>
 <header id="headerAll">
