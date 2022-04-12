@@ -55,6 +55,10 @@ function post_link_attributes($output) {
 /* ------------------------------------------------------------------------- */
 if ( ! function_exists( 'gm_setup' ) ) {
 	function gm_setup() {	
+		// Disables the block editor from managing widgets in the Gutenberg plugin.
+		add_filter( 'gutenberg_use_widgets_block_editor', '__return_false' );
+		// Disables the block editor from managing widgets.
+		add_filter( 'use_widgets_block_editor', '__return_false' );
 		add_theme_support( 'automatic-feed-links' );
 		add_theme_support('title-tag');
 		add_action( 'show_user_profile', 'add_extra_social_links' );
